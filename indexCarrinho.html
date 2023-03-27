@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleCarrinho.css">
+    <title>Carrinho de Compras</title>
+</head>
+<body>
+
+    <header>
+        <h1>Sweet Candy Shop</h1>
+    </header>
+
+    <div class="input">
+        <label for="nome">Nome</label>
+        <input type="text" id="inputNome">
+    </div>
+
+    <div class="input">
+        <label for="preco">Preco</label>
+        <input type="number" id="inputPreco">
+    </div>
+
+    <div class="input">
+        <label for="qtd">Quantidade</label>
+        <input type="number" id="inputQtd">
+    </div>
+    
+    <div>
+        <button onclick="meuCarrinho.adicionarProduto()" id="cadastro" class="botao">Cadastrar Produto</button>
+    </div>
+
+    <hr>
+
+    <div>
+        <h2 id="cadastroSucesso">Valida Cadastro</h2>
+    </div>
+
+    <div >
+        <button onclick="meuCarrinho.retornaCarrinho()" id="mostraLista" class="botao">Mostrar Estoque</button>
+        <div id="listaProdutos"> </div>
+    </div>
+
+    <hr>
+
+    <!-- <div class="input">
+        <label for="">Nome Produto</label>
+        <input type="text" id="inputBusca">
+    </div>
+
+    <button onclick="meuCarrinho.buscarProduto()" id="buscaProduto" class="botao">Gerar Código</button>
+
+    <h2 id="codigoProduto">Código a Ser Deletado</h2> -->
+
+    <hr>
+
+    <div class="input">
+        <label for="">Código Produto</label>
+        <input type="text" id="inputDel">
+    </div>
+
+    <div>
+        <button onclick="meuCarrinho.removerProduto()" id="removeProduto" class="botao">Deletar Produto</button>
+    </div>
+    
+    <h2 id="produtoDeletado">Valida Delete</h2>
+
+    <hr>
+    <script src="appCarrinho.js"></script>
+</body>
+</html>

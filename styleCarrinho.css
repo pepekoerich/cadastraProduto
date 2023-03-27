@@ -1,0 +1,20 @@
+.centralizar {
+    display: inline-block;
+    margin: 0 0 0 30px;
+}  
+
+.input {
+    display: inline-block;
+    margin: 1%;
+    justify-content: space-around;
+}
+
+
+.botao{
+    margin: 1%;
+    display: inline-block;
+    justify-content: space-around;
+}
+
+
+
